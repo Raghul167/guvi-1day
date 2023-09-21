@@ -1,0 +1,5 @@
+1)  HTTP - 1.1 relies on multiple connections for requests, causing inefficiencies.
+HTTP - 2 introduces multiplexing, enabling simultaneous requests over one connection, reducing latency. Additionally, header compression, server push, and a binary protocol enhance performance, making HTTP/2 a more efficient choice for modern web applications.
+
+2) In JavaScript, objects are a significant data type. They consist of a number of key-value pairs, where the keys are strings and the values can be any kind of information, including other objects.
+
