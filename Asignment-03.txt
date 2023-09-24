@@ -1,0 +1,12 @@
+1)Write a blog between Document and Window Object?
+
+DOCUMENT OBJECT:
+	1)It represents the entire HTML document displayed in the browser window.
+	2)It provides access to the content of the document, allowing you to manipulate elements, modify styles, and handle events.
+
+WINDOW OBJECT:
+	1)The window object represents the browser window or tab in which your web page is displayed.
+	2)It is the highest-level object in the browser's object hierarchy.
+	3)It manages the browser's functionalities and provides global scope for JavaScript code.
+
+2)codekata practice is done
