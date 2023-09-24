@@ -1,33 +1,12 @@
-1) Write a blog on Difference between HTTP1.1 vs HTTP2?
+1)Write a blog between Document and Window Object?
 
-INTRODUCTION:
-	HTTP, or Hypertext Transfer Protocol, is the foundation of data communication on the World Wide Web. It enables browsers to request and receive web pages, facilitating seamless sharing of information across the internet.
+DOCUMENT OBJECT:
+	1)It represents the entire HTML document displayed in the browser window.
+	2)It provides access to the content of the document, allowing you to manipulate elements, modify styles, and handle events.
 
-VERSIONS OF HTTP:
-	1) HTTP 0.9
-	2) HTTP 1.0
-	3) HTTP 1.1
-	4) HTTP 2.0
-	5) HTTP 3.0
+WINDOW OBJECT:
+	1)The window object represents the browser window or tab in which your web page is displayed.
+	2)It is the highest-level object in the browser's object hierarchy.
+	3)It manages the browser's functionalities and provides global scope for JavaScript code.
 
-KEY DIFFERENCE BETWEEN HTTP 1.1 & HTTP 2.0:
-
-Multiplexing: HTTP/1.1 can only handle one request at a time, while HTTP/2.0 allows multiple requests and responses to be sent concurrently. This speeds up page loading times.
-
-Header Compression: HTTP/2.0 compresses header data, reducing the amount of information that needs to be sent between the client and server. This leads to faster data transfer.
-
-Binary Format: HTTP/1.1 uses a text-based format, which can be inefficient. HTTP/2.0 uses a binary format that is more compact and easily parsed by machines.
-
-Prioritization: HTTP/2.0 allows for requests to be prioritized, meaning the client can specify which resources are more important. This ensures critical content is delivered first, enhancing user experience.
-
-2)Write a blog about objects and its internal representation in java script?
-
-OBJECTS:
-In JavaScript, an object is a collection of key-value pairs where each key is a string (or a Symbol, introduced in ES6) and each value can be any data type, including other objects or functions. This makes objects a powerful tool for grouping related data and behavior.
-
-SYNTAX OF OBJECT:
-object={property1:value1,property2:value2.....propertyN:valueN}  
-
-3)Codekata practice is done.
-
-4)Completed the reading of IP ADDRESS ,MAC,PORTS and HTTP Methods.
+2)codekata practice is done
