@@ -1,0 +1,94 @@
+1)JSON iterations:
+
+let jsonData = {
+  "fruits": [
+    "apple",
+    "banana",
+    "cherry",
+    "date"
+  ]
+};
+ let fruitsArray = jsonData.fruits;
+
+for (let i = 0; i < fruitsArray.length; i++) {
+  console.log(fruitsArray[i]);
+}
+
+for (let fruit of fruitsArray) {
+  console.log(fruit);
+}
+
+for (let index in fruitsArray) {
+  console.log(fruitsArray[index]);
+}
+
+fruitsArray.forEach(function(fruit) {
+  console.log(fruit);
+});
+
+
+
+2)Creating a resume using JSON
+
+let resumeData = {
+  "name": "John Doe",
+  "contact": {
+    "email": "john.doe@example.com",
+    "phone": "555-555-5555",
+    "address": "123 Main Street, Cityville, State, 12345"
+  },
+  "summary": "Experienced software engineer with a passion for creating efficient and scalable applications.",
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "university": "University of Example",
+      "year": 2015
+    }
+  ],
+  "experience": [
+    {
+      "position": "Senior Software Engineer",
+      "company": "Guvi",
+      "location": "Chennai",
+      "start_date": "2016-07-01",
+      "end_date": "2022-09-30",
+      "responsibilities": [
+        "Led a team of developers in designing and implementing a high-performance web application.",
+        "Collaborated with product managers to define requirements and prioritize features.",
+        "Implemented and maintained CI/CD pipelines to automate the deployment process."
+      ]
+    },
+    {
+      "position": "Software Engineer",
+      "company": "CodeWorks",
+      "location": "Codeville",
+      "start_date": "2015-01-15",
+      "end_date": "2016-06-30",
+      "responsibilities": [
+        "Developed and maintained features for a large-scale e-commerce platform.",
+        "Participated in code reviews and provided mentorship to junior developers.",
+        "Implemented performance optimizations resulting in a 20% increase in page load speed."
+      ]
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "SQL",
+    "Python",
+    "Git",
+    "Agile Development",
+    "UI/UX Design"
+  ],
+  "languages": [
+    "English (Fluent)",
+    "Spanish (Intermediate)"
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Associate",
+    "Google Cloud Professional Data Engineer"
+  ]
+};
+
+console.log(resumeData);
