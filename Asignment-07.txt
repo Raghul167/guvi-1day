@@ -1,0 +1,40 @@
+1) fetch('https://restcountries.com/v3.1/all')
+    .then(response => response.json())
+    .then(data => {
+        const asiacountry = data.filter(country => country.region=="asia");
+        console.log('Countries in Asia:', asiacountry.map(country => country.name.asia));
+    });
+   
+2)fetch('https://restcountries.com/v3.1/all')
+    .then(response => response.json())
+    .then(data => {
+        const countriesOver2lakhs = data.filter(country => country.population >200000);
+        console.log('Countries with population over 2lakhs:', countriesOver2lakhs.map(country => country.name.common));
+    })
+    
+ 3)fetch('https://restcountries.com/v3.1/all')
+    .then(response => response.json())
+    .then(data => {
+        const countryNames = data.map(country => country.name.common);
+        console.log('Country names:', countryNames);
+    })
+    
+
+
+4)fetch('https://restcountries.com/v3.1/all')
+    .then(response => response.json())
+    .then(data => {
+        const totalPopulation = data.reduce((total, country) => total + country.population, 0);
+        console.log('Total population:', totalPopulation);
+    });
+    
+5)fetch('https://restcountries.com/v3.1/all')
+    .then(response => response.json())
+    .then(data => {
+        const countriesUsingUSD = data.filter(country => {
+            return country.currencies && Object.values(country.currencies).includes('USD');
+        });
+        
+        console.log('Countries using US Dollars:', countriesUsingUSD.map(country => country.name.common));
+    })
+    
